@@ -1,0 +1,11 @@
+# Project exclude paths
+/.gradle/
+/build/
+/entities/build/
+/entities/build/classes/java/main/
+/repository/build/
+/repository/build/classes/java/main/
+/service/build/
+/service/build/classes/java/main/
+/springApplication/build/
+/springApplication/build/classes/java/main/
