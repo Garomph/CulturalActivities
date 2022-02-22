@@ -5,4 +5,7 @@ include 'repository'
 include 'service'
 include 'springApplication'
 include 'springBasicAuthApplication'
+include 'springOAuth2Server'
+include 'springOAuth2ResourceServer'
+include 'springOAuth2Client'
 

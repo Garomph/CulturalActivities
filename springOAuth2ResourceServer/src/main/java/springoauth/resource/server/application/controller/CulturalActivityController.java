@@ -1,10 +1,9 @@
-package net.bsocquet.cultural.activity.spring.application.controller;
+package springoauth.resource.server.application.controller;
 
 
 import activity.service.CulturalActivityService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +17,6 @@ public class CulturalActivityController {
     }
 
     @GetMapping("/activity")
-    @PreAuthorize("hasRole('READER')")
     public ResponseEntity<Integer> getTotalNumberOfActivity() {
         return new ResponseEntity<>(culturalActivityService.getTotalActivityByCriteria(null), HttpStatus.OK);
     }
